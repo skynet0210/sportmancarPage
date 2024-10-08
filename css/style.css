@@ -695,62 +695,6 @@ label.light {
 }
 
 
-
-.cardIndex {
-  margin-top: 35px;
-  height: 480px;
-  width: 100%;
-  transition: all 0.4s;
-  font-size: 30px;
-  font-weight: 900;
-}
-
-.cardIndex:hover {
-  background-image: url('../img/fondoMarca.jpg');
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
-}
-
-.first-content {
-  background-size: cover;
-  /* Ajusta el tamaño de la imagen para que cubra todo el contenedor */
-  /*background-position: center;*/
-  /* Centra la imagen */
-  height: 100%;
-  width: 100%;
-  transition: all 0.4s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 1;
-
-}
-
-.cardIndex:hover .first-content {
-  height: 0px;
-  opacity: 0;
-}
-
-.second-content {
-  height: 0%;
-  width: 100%;
-  opacity: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.4s;
-  font-size: 0px;
-}
-
-.cardIndex:hover .second-content {
-  opacity: 1;
-  height: 100%;
-  font-size: 1.8rem;
-  transform: rotate(0deg);
-}
-
-
 .button {
   display: true;
   /* Asegura que el botón sea visible en pantallas de tamaño grande */
@@ -795,8 +739,6 @@ label.light {
   }
 
 }
-
-
 
 
 .button {
@@ -1774,8 +1716,6 @@ pre code {
   overflow-y: scroll;
 }
 
-.container,
-.container-fluid,
 .container-sm,
 .container-md,
 .container-lg,
@@ -1787,6 +1727,25 @@ pre code {
   margin-left: auto;
   padding-bottom: 20px;
 }
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 20px;
+}
+
+.container{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 20px;
+}
+
 
 @media (min-width: 576px) {
 
@@ -6192,19 +6151,6 @@ a.badge-dark:focus,
 a.badge-dark.focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(18, 15, 45, 0.5);
-}
-
-.jumbotron {
-  padding: 2rem 1rem;
-  background-color: #0068FF;
-}
-
-
-
-.jumbotron-fluid {
-  padding-right: 0;
-  padding-left: 0;
-  border-radius: 0;
 }
 
 .alert {
@@ -11642,21 +11588,16 @@ h6,
   z-index: 1;
 }
 
-/* .overlay-top::before {
-  top: 0;
-  background: url(../img/overlay-top.png) top center no-repeat;
-  background-size: contain;
-} */
-
-/* .overlay-bottom::after {
-  bottom: 0;
-  background: url(../img/overlay-bottom.png) bottom center no-repeat;
-  background-size: contain;
-} */
 
 .bg-image {
   background: linear-gradient(rgba(40, 120, 235, 0.05), rgba(40, 120, 235, 0.05)), url(../img/banner.png);
   background-attachment: fixed;
+  background-size: cover;
+}
+
+.bg-agilita-turno{
+  background-image: url('../img/bg/bg-fondo-clean.png');
+  background-repeat: no-repeat;
   background-size: cover;
 }
 

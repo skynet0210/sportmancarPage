@@ -1,0 +1,67 @@
+.jumbotron-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 0;
+}
+
+.jumbotron {
+    padding: 2rem 1rem;
+    background-image: url('../img/bg/bg-index.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cardIndex {
+    margin-top: 35px;
+    height: 480px;
+    width: 100%;
+    transition: all 0.4s;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.cardIndex:hover {
+    background-color: #0068FF;
+    cursor: pointer;
+}
+
+.first-content {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+
+}
+
+.cardIndex:hover .first-content {
+    height: 0px;
+    opacity: 0;
+}
+
+.second-content {
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+    font-size: 0px;
+}
+
+.cardIndex:hover .second-content {
+    opacity: 1;
+    height: 100%;
+    font-size: 1.8rem;
+    transform: rotate(0deg);
+}
+
+
+/*
+CONOCE MAS SOBRE NOSOTROS
+*/
+
